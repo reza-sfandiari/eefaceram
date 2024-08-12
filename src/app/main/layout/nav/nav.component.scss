@@ -1,0 +1,18 @@
+.navbar {
+
+    background-color: var(--bg-color) !important;
+    
+    box-shadow: 0 2px 4px var(--shadow-color);
+
+    .navbar-brand{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-color-100);
+    }
+    img{
+        background-color: var(--bg-color-img);
+        border-radius: 35%;
+        padding: 3px;
+    }
+    
+  }

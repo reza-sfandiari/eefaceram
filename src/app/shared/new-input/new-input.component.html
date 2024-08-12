@@ -1,0 +1,17 @@
+<form
+      [formGroup]="newTodoForm"
+      class="input-wrapper"
+      (ngSubmit)="onSubmit()"
+    >
+      <input
+        class="todo-checkbox"
+        type="checkbox"
+        formControlName="completed"
+      />
+      <input
+        class="todo-input"
+        type="text"
+        placeholder="ایجاد کار جدید ..."
+        formControlName="text"
+      />
+    </form>

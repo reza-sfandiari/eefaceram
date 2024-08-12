@@ -1,0 +1,13 @@
+
+<section class="todo-card"  >
+    <ng-content></ng-content>
+
+   <eef-new-input></eef-new-input>
+    @if(todos().length > 0) {
+    <main class="todo-main">
+
+        <eef-list [todos]="filteredTodos()"/>
+        <eef-option [todosLeft]="todosLeft()"/>
+    </main>
+    }
+  </section>
