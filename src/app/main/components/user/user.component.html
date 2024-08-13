@@ -1,1 +1,23 @@
-<p>user works!</p>
+<div class="rtl bg-image">
+  <div class="d-flex align-items-center justify-content-center">
+    <div class="user">
+      <div class="user-right col-5">
+        <eef-signup></eef-signup>
+      </div>
+
+      <div class="user-left col-7">
+        <eef-user-card [users]="users()" [filteredUsers]="filteredUsers()" [usersLeft]="usersLeft()">
+          <eef-header [headerTitle]="'لیست افراد'"></eef-header>
+        </eef-user-card>
+      </div>
+    </div>
+  </div>
+</div>
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">در حال دریافت ...</p>
+</ngx-spinner>

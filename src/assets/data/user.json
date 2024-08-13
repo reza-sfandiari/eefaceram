@@ -1,0 +1,44 @@
+[
+    
+    {
+        "username": "admin",
+        "password": "admin",
+        "confirmPassword": "admin",
+        "role": "admin",
+        "name": "admin",
+        "lastname": "admin",
+        "status" : true,
+       "id": 1
+      
+    },
+    {
+        "username": "reza",
+        "password": "user",
+        "confirmPassword": "user",
+        "role": "user",
+        "name": "reza",
+        "lastname": "rezaei",
+        "status" : true,
+       "id": 2
+    },
+    {
+        "username": "ali",
+        "password": "user",
+        "confirmPassword": "user",
+        "role": "user",
+        "name": "ali",
+        "status" : true,
+        "lastname": "alavi",
+       "id": 3
+    },
+    {
+        "username": "mohammad",
+        "password": "user",
+        "confirmPassword": "user",
+        "role": "user",
+        "name": "mohammad",
+        "status" : false,
+        "lastname": "mohammadi",
+       "id": 4
+    }
+]

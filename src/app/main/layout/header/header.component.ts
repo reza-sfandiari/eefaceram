@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ThemeSwitcherComponent } from "../theme-switcher/theme-switcher.component";
 
 @Component({
@@ -9,5 +9,6 @@ import { ThemeSwitcherComponent } from "../theme-switcher/theme-switcher.compone
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-
+  @Input() headerTitle : string = 'لیست کارها';
+ 
 }

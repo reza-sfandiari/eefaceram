@@ -1,5 +1,17 @@
-.main {
-    padding:3.5rem 0 0 0;
+.todo-card {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  .todo-main {
+    background-color: var(--bg-todo-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 3.5rem 5rem -1.5rem var(--shadow-color);
+    transition: all 0.3s;
+  }
+
+  .main {
+    padding: 7rem 0 11.5rem 0;
     
     background-image: var(--bg-desktop-image);
     background-position: top center;
@@ -8,7 +20,7 @@
     background-color: var(--bg-color);
     
     transition: all 0.3s;
-    min-height: 85vh;
+    min-height: 100vh;
   }
 
   @media (max-width: 40em) {

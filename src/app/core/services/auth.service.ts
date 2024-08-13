@@ -15,10 +15,10 @@ export class AuthService {
   public signIn(userData: User){
     localStorage.setItem('ACCESS_TOKEN', "access_token");
     if(userData.username === 'admin' && userData.password === 'admin'){
-      localStorage.setItem('ROLE', 'admin');
+      localStorage.setItem('role', 'admin');
     }
     else{
-      localStorage.setItem('ROLE', 'user');
+      localStorage.setItem('role', 'user');
     }
     console.log(userData);
   }
@@ -27,6 +27,7 @@ export class AuthService {
   }
   public logout(){
     localStorage.removeItem('ACCESS_TOKEN');
+    localStorage.removeItem('role');
     this.router.navigate(['/auth']);
 
   }

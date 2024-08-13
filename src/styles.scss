@@ -17,6 +17,7 @@
       --text-color-500: rgba(73, 76, 107, 1);
       --text-color-600: rgba(209, 210, 218, 1);
       --error-color: #d00000;
+      --text-color-header: rgba(57, 58, 75, 1);
     }
   
     &.dark-mode {
@@ -34,6 +35,7 @@
       --text-color-500: rgba(227, 228, 241, 1);
       --text-color-600: rgba(77, 80, 103, 1);
       --error-color: #9e2a2b;
+      --text-color-header: rgb(156, 158, 173);
     }
   }
   @font-face {
@@ -64,3 +66,6 @@ font-style: normal;/* Safari, Android, iOS */
   
   @import 'ngx-toastr/toastr';
 
+  // @import "~@ng-select/ng-select/themes/default.theme.css";
+  // ... or 
+  // @import "~@ng-select/ng-select/themes/material.theme.css";

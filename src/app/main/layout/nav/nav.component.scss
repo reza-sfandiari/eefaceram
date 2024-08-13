@@ -9,6 +9,13 @@
         font-weight: 700;
         color: var(--text-color-100);
     }
+    .navbar-item{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--text-color-100);
+        text-decoration: none;
+        font-family: 'iran_sans';
+    }
     img{
         background-color: var(--bg-color-img);
         border-radius: 35%;

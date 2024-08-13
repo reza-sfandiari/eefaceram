@@ -1,0 +1,12 @@
+<ul class="todo-list">
+    @for(user of users; track user.id) {
+    <li>
+      <!-- <app-todo-item [todo]="todo" /> -->
+       <eef-user-item [user]="user" />
+    </li>
+    } @empty {
+    <li>
+      <p class="empty-list-text">موردی یافت نشد</p>
+    </li>
+    }
+</ul>

@@ -20,7 +20,9 @@
     color: #4285f4;
     background-color: transparent;
   }
-  
+  label,h1{
+    font-family: 'iran_sans' !important;
+  }
   .edit-error {
     font-size: 0.9rem;
     font-weight: 500;
@@ -57,6 +59,7 @@
   .btn-primary{
     font-size: 20px;
     font-weight: 600;
+    font-family: 'iran_sans';
   }
   label {
     position: absolute;
@@ -85,3 +88,35 @@
    
     height: 50px;
   }
+.signup-card{
+  width: 60rem;
+}
+
+.ng-select.custom {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  
+}
+.ng-select.custom .ng-select-container  {            
+  min-height: 0px;
+  border-radius: 10px;
+}
+
+.ng-select.custom ::ng-deep .ng-select-container  {            
+  min-height: 0px;
+  border-radius: 10px;
+}

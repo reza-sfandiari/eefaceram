@@ -1,0 +1,35 @@
+<div class="todo">
+    <div>
+      <button
+        class="todo-btn"
+        aria-label="toggle"
+      
+        [ngClass]="user.status ? 'todo-btn--completed' : ''"
+        (click)="updateUser()"
+      ></button>
+    </div>
+  <!-- [ngClass]="todo.completed ? 'todo-btn--completed' : ''" -->
+    <div class="todo-div-text">
+      <p
+        class="todo-text "
+        [ngClass]="!user.status ? 'todo-text--completed' : ''"
+      >
+        {{ 'نام کاربری' + ' : ' + user.username }}
+      </p>
+      <p
+      class="todo-text"
+      [ngClass]="!user.status ? 'todo-text--completed' : ''"
+    >
+      {{ 'نوع کاربری' + ' : ' + user.role }}
+    </p>
+
+    </div>
+    <div>
+      <button class="todo-delete-btn" (click)="deleteUser()">
+        <img
+          src="../../../../../assets/images/icon-cross.svg"
+          alt="Cross icon image to delete a todo"
+        />
+      </button>
+    </div>
+  </div>

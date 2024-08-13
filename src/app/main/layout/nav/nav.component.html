@@ -1,20 +1,29 @@
 <nav class="navbar navbar-light bg-light">
   <div class="d-flex align-items-center justify-content-between w-100">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+    <div class="container-fluid d-flex align-items-center align-content-center">
+      <a class="navbar-brand mx-3" routerLink="/home">
         <img
           src="../../../../assets/images/favicon-32x32.png"
           alt=""
-          width="24"
-          height="20"
-          class="d-inline-block align-text-top"
+          width="26"
+          height="26"
+          class="d-inline-block align-text-top mx-3 mt-1"
         />
         Eefaceram
       </a>
+      <a class="navbar-item mx-3" [hidden]="isRole" routerLink="/users">
+        لیست کاربران
+      </a>
     </div>
-    <div>
-        <eef-theme-switcher></eef-theme-switcher>
+    <div class="d-flex">
+      <img
+        [hidden]="isLogin"
+        (click)="logout()"
+        class="mx-3"
+        [src]="'../../../../assets/images/exit.svg'"
+        alt="Icon image to exit"
+      />
+      <eef-theme-switcher class="mx-3"></eef-theme-switcher>
     </div>
   </div>
-  
 </nav>

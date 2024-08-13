@@ -11,7 +11,7 @@
     <div class="todo-div-text">
       <p
         class="todo-text"
-        [ngClass]="todo.completed ? 'todo-text--completed' : ''"
+        [ngClass]="!todo.completed ? 'todo-text--completed' : ''"
       >
         {{ todo.text }}
       </p>

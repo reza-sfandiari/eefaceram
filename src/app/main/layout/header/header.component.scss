@@ -3,10 +3,11 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4rem;
+    font-family:'iran_sans' ;
   }
 
   .header-title {
-    color: rgba(255, 255, 255, 1);
+    color:var(--text-color-header);
     font-size: 6rem;
     font-weight: 900;
     line-height: 4rem;

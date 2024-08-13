@@ -1,0 +1,12 @@
+<section class="todo-card"  >
+    <ng-content></ng-content>
+
+   
+    @if(users.length > 0) {
+    <main class="todo-main">
+
+        <eef-user-list [users]="filteredUsers"/>
+        <eef-useroption [userLeft]="usersLeft"/>
+    </main>
+    }
+  </section>

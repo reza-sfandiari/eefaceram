@@ -1,11 +1,11 @@
 <div class="rtl bg-image">
-  <div class="container py-5">
+  <div class="d-flex justify-content-center align-items-center py-2">
     <div class="login">
       <div class="login-right col-4">
         <div class="title-line">
-          <h2>ثبت نام / ورود</h2>
+          <h2>ورود</h2>
         </div>
-        <form [formGroup]="loginForm" class="row g-3">
+        <form [formGroup]="loginForm" class="row g-3" (ngSubmit)="login()">
           <div class="form-row">
             <div class="col">
               <div class="md-form mb-2">

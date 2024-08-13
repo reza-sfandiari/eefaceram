@@ -1,21 +1,20 @@
-<div class="container-fluid mb-5 " >
-  <div class="row mb-5"  >
-    <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto mt-5"  >
+<div class="signup-card">
+  <div class="row mb-5">
+    <div class="">
       <div class="nga-card">
-        <h1 class="h5 card-header text-center py-4" >
-          <i class="fas fa-user-plus me-4"></i><strong > ثبت نام </strong>
+        <h1 class="h5 card-header text-center py-4">
+          <i class="fas fa-user-plus me-4"></i><strong> اضافه کردن </strong>
         </h1>
         <div class="card-body px-lg-5 pt-4">
-          <form>
+          <form [formGroup]="signupForm">
             <div class="form-row">
               <div class="col">
                 <div class="md-form mb-2">
-                  <div class="form-floating" >
+                  <div class="form-floating">
                     <input
-                    
+                      formControlName="username"
                       type="username"
                       class="form-control form-control-sm"
-                      formControlName="username"
                       id="name"
                       placeholder=""
                     />
@@ -35,17 +34,17 @@
                   </div>
                 </div>
                 <div class="md-form mb-2">
-                    <div class="form-floating">
-                      <input
-                        type="lastName"
-                        class="form-control form-control-sm"
-                        formControlName="lastName"
-                        id="lastName"
-                        placeholder=""
-                      />
-                      <label for="floatingInput">نام خانوادگی</label>
-                    </div>
+                  <div class="form-floating">
+                    <input
+                      type="lastName"
+                      class="form-control form-control-sm"
+                      formControlName="lastName"
+                      id="lastName"
+                      placeholder=""
+                    />
+                    <label for="floatingInput">نام خانوادگی</label>
                   </div>
+                </div>
                 <div class="md-form mb-2">
                   <div class="form-floating">
                     <input
@@ -71,26 +70,41 @@
                   </div>
                 </div>
 
-                <div class="md-form mb-2">
+                <div class="md-form mb-2 mt-4">
                   <div class="form-floating">
-                    <select class="form-select" aria-label="Default select example">
-                      <!-- <option selected>نوع کاربر</option> -->
+                    <!-- <select class="form-select" aria-label="Default select example" >
+                    <option selected>نوع کاربر</option> 
                       <option value="1" selected>ادمین</option>
                       <option value="2">کاربر معمولی</option>
+                  
+                    </select> -->
+                    <ng-select
+                      [items]="roles"
+                      
+                      class="custom"
+                      bindLabel="name"
+                      bindValue="id"
                     
-                    </select>
+                      formControlName="role"
                     
+                    >
+                    </ng-select>
+                    
+                    <label for="floatingInput" class="">نوع کاربر</label>
                   </div>
                 </div>
-                
+
                 <div class="d-flex justify-content-center align-items-center">
-                  <button class="w-50  btn btn-primary my-3" type="submit" style="height: 45px;">
-                    ثبت نام
-                    <i class="fas fa-user-plus"></i>
+                  <button
+                    class="w-50 btn btn-primary my-3"
+                    type="submit"
+                    style="height: 45px"
+                    (click)="adduser()"
+                  >
+                    اضافه کردن
+                    <!-- <i class="fas fa-user-plus"></i> -->
                   </button>
                 </div>
-
-              
               </div>
             </div>
           </form>
@@ -99,3 +113,7 @@
     </div>
   </div>
 </div>
+
+
+
+

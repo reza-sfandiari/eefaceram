@@ -21,13 +21,13 @@ export class TodosService {
       case 'همه':
         return this.todos();
       case 'فعال':
-        return this.todos().filter((todo) => !todo.completed);
-      case 'کامل شده':
         return this.todos().filter((todo) => todo.completed);
+      case 'کامل شده':
+        return this.todos().filter((todo) => !todo.completed);
     }
   });
   todosLeft = computed(
-    () => this.todos().filter((todo) => !todo.completed).length
+    () => this.todos().filter((todo) => todo.completed).length
   );
 
   getTodos(): Observable<Todo[]> {
